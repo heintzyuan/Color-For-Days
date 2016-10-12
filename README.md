@@ -1,6 +1,6 @@
 # color-for-days
 
-> A to-do-list web app
+> A to-do-list web app created by Terry
 
 ## Build Setup
 
