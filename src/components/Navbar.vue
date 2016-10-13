@@ -1,7 +1,7 @@
 <template>
 <div class="navbar-div navbar-promote-layer">
 	<nav class="navbar-nav" >
-		<div class="model-5">
+		<div class="navbar-button">
 		  <div v-on:click="open" v-bind:class="{'menuopen':this.$store.getters.isOpen,'menu':this.$store.getters.isClosed}">
 		    <div class="bar"></div>
 		    <div class="bar"></div>
@@ -48,7 +48,7 @@ display: block;
 .navbar-nav {
     display: flex;
     width: 100%;
-    height: 59px;
+    height: 49px;
     position: relative;
     flex-direction: row;
     margin: 0 auto;	
@@ -58,8 +58,8 @@ display: block;
 -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    font-size: 30px;
-    line-height: 59px;
+    font-size: 20px;
+    line-height: 49px;
     margin: 0px;
     padding-left:10px;
     color: #fefefe;
@@ -70,8 +70,8 @@ display: block;
 }
 .menu {
 
-  height: 59px;
-  width: 59px;
+  height: 49px;
+  width: 49px;
   position: relative;
   margin:0;
   padding:0;
@@ -87,10 +87,10 @@ display: block;
 }
 
 .bar {
-  height: 5px;
-  width: 35px;
+  height: 3px;
+  width: 21px;
   display: block;
-  margin-left:12px;
+  margin-left:14px;
   position: relative;
   background-color: #fff;
   -moz-border-radius: 10px;
@@ -101,31 +101,31 @@ display: block;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.model-5 {
+.navbar-button {
   background-color: #F2276C;
 }
-.model-5 .bar{
+.navbar-button .bar{
   position: absolute;
 }
 
-.model-5 .bar:nth-of-type(1) {
-  top: 11px;
+.navbar-button .bar:nth-of-type(1) {
+  top: 14px;
   -moz-transition: top 0.1s ease 0.1s, -moz-transform 0.1s ease-out 0.1s;
   -o-transition: top 0.1s ease 0.1s, -o-transform 0.1s ease-out 0.1s;
   -webkit-transition: top 0.1s ease, -webkit-transform 0.1s ease-out;
   -webkit-transition-delay: 0.1s, 0.1s;
   transition: top 0.1s ease 0.1s, transform 0.1s ease-out 0.1s;
 }
-.model-5 .bar:nth-of-type(2) {
-  top: 27px;
+.navbar-button .bar:nth-of-type(2) {
+  top: 23px;
   -moz-transition: ease 0.1s 0.1s;
   -o-transition: ease 0.1s 0.1s;
   -webkit-transition: ease 0.1s;
   -webkit-transition-delay: 0.1s;
   transition: ease 0.1s 0.1s;
 }
-.model-5 .bar:nth-of-type(3) {
-top: 43px;
+.navbar-button .bar:nth-of-type(3) {
+top: 32px;
   -moz-transition: top 0.1s ease 0.1s, -moz-transform 0.1s ease-out 0.1s;
   -o-transition: top 0.1s ease 0.1s, -o-transform 0.1s ease-out 0.1s;
   -webkit-transition: top 0.1s ease, -webkit-transform 0.1s ease-out;
@@ -135,8 +135,8 @@ top: 43px;
 
 .menuopen {
 
-  height: 59px;
-  width: 59px;
+  height: 49px;
+  width: 49px;
   position: relative;
   margin:0;
   padding:0;
@@ -150,7 +150,7 @@ top: 43px;
   transition: 0.1s;
   cursor: pointer;
 }
-.model-5 .menuopen {
+.navbar-button .menuopen {
   -moz-transition: -moz-transform 0.1s ease 0.3s;
   -o-transition: -o-transform 0.1s ease 0.3s;
   -webkit-transition: -webkit-transform 0.1s ease;
@@ -161,8 +161,8 @@ top: 43px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.model-5 .menuopen .bar:nth-of-type(1) {
-  top: 27px;
+.navbar-button .menuopen .bar:nth-of-type(1) {
+  top: 23px;
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
@@ -173,11 +173,11 @@ top: 43px;
   -webkit-transition-delay: 0.1s, 0.3s;
   transition: top 0.1s ease 0.1s, transform 0.1s ease-out 0.3s;
 }
-.model-5 .menuopen .bar:nth-of-type(2) {
+.navbar-button .menuopen .bar:nth-of-type(2) {
   opacity: 0;
 }
-.model-5 .menuopen .bar:nth-of-type(3) {
-  top: 27px;
+.navbar-button .menuopen .bar:nth-of-type(3) {
+  top: 23px;
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);

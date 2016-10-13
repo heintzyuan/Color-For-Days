@@ -94,3 +94,16 @@ export default{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+<img class="logo" src="./assets/logo.png">
+   
+    <div>
+  {{ message }}
+</div>
+<p>
+          <router-link to="/foo">Go to Foo</router-link>
+          <router-link to="/bar">Go to Bar</router-link>
+        </p>
+        
+<router-view></router-view>
+    
+  </div>

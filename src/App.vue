@@ -2,22 +2,6 @@
   <div id="app">
 <my-navbar></my-navbar>
 <my-navdrawer></my-navdrawer>
-
-    <img class="logo" src="./assets/logo.png">
-   
-    <div>
-  {{ message }}
-</div>
-<p>
-          <router-link to="/foo">Go to Foo</router-link>
-          <router-link to="/bar">Go to Bar</router-link>
-        </p>
-        
-<router-view></router-view>
-    
-  </div>
-
-
 </template>
 
 <script>
