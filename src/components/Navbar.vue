@@ -2,13 +2,13 @@
 <div class="navbar-div navbar-promote-layer">
 	<nav class="navbar-nav" >
 		<div class="navbar-button">
-		  <div v-on:click="open" v-bind:class="{'menuopen':this.$store.getters.isOpen,'menu':this.$store.getters.isClosed}">
+		  <div v-on:click="open" v-bind:class="{'menuopen':isOpen,'menu':isClosed}">
 		    <div class="bar"></div>
 		    <div class="bar"></div>
 		    <div class="bar"></div>
 		  </div>
 		</div>
-<h1 class="navbar-logo">ColorForDays</h1>
+<h1 class="navbar-logo">hahaha</h1>
 	</nav>
 </div>
 
@@ -17,6 +17,14 @@
 <script>
 
 export default{
+  computed :{
+isOpen: function()
+{return this.$store.getters.isOpen },
+
+isClosed: function()
+{return this.$store.getters.isClosed },
+  },
+
   methods: {
     open: function () {
 this.$store.commit('draweropen')
@@ -40,7 +48,7 @@ display: block;
     top: 0;
     left: 0;
     background-color: #03A9F4;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.20);
     overflow: hidden;
     z-index: 902;
 }

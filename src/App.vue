@@ -2,20 +2,11 @@
   <div id="app">
 <my-navbar></my-navbar>
 <my-navdrawer></my-navdrawer>
+<my-Calendar></my-Calendar>
 </template>
 
 <script>
 
-
-export default { 
-  data () {
-    return {
-      message: 'Hello world!'
-    }
-  }
-  
-  
-}
 </script>
 
 <style>

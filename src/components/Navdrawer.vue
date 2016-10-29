@@ -1,5 +1,5 @@
 <template>
-<nav class="navdrawer-promote-layer navdrawer" v-bind:class="{'navdraweropen':this.$store.getters.drawerisOpen}">
+<nav class="navdrawer-promote-layer navdrawer" v-bind:class="{'navdraweropen':drawerisOpen}">
               <h4></h4>
               <ul>
               <li >
@@ -27,6 +27,13 @@
 </template>
 
 <script>
+export default{
+  computed :{
+drawerisOpen: function()
+{return this.$store.getters.drawerisOpen}
+}
+}
+
 
 </script>
 
@@ -45,7 +52,7 @@
     width: 155px;
     height: 100%;
     background-color: white;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.20);
     color: #fefefe;
     -webkit-transform: translate(-155px,0);
     transform: translate(-155px,0);

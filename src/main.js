@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import Navbar from './components/Navbar.vue'
 import Navdrawer from './components/Navdrawer.vue'
-
+import Calendar from './components/Calendar.vue'
 Vue.use(VueRouter)
 Vue.use(Vuex)
 
@@ -39,7 +39,7 @@ state.drawerisOpen = ! state.drawerisOpen
 /*组件注册*/
 Vue.component('my-navbar', Navbar)
 Vue.component('my-navdrawer', Navdrawer)
-
+Vue.component('my-Calendar', Calendar)
 const router = new VueRouter({
   routes // short for routes: routes
 })
